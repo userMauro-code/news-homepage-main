@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | News homepage</title>
 
@@ -15,46 +19,79 @@
   </style>
 </head>
 <body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header class="header">
+    <button class="logo__principal icon">
+      <a href=""><img src="./assets/images/logo.svg" alt="New homepage"></a>
+    </button>
+    <div class="content__nav">
+      <button aria-label="open menu" class="logo__menu icon">
+        <img src="./assets/images/icon-menu.svg" alt="" >
+      </button>
+      
+      <nav class="nav" hidden aria-label="Primary navigation">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">New</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <main class="main">
+      <picture>
+        <source media="(min-width: 900px)" srcset="./assets/images/image-web-3-desktop.jpg">
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="img__web">
+      </picture>
+      <h1 class="title__principal">The Bright Future of Web 3.0?</h1>
+      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?</p>
+      <button class="btn">Read more</button>
+    </main>
+    <aside class="aside">
+      <h2 class="title__aside">New </h2>
+      <div class="new__box">
+        <div class="newBox__one">
+          <h2>Hydrogen VS Electric Cars</h2>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="newBox__two">
+          <h2>The Downsides of AI Artistry</h2>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="newBox__tree">
+          <h2>Is VC Funding Drying Up?</h2>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </aside>
+    <section class="section" aria-label="Featured articles">
+      <article class="section__box">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        <div class="sectionBox__one">
+          <p>01</p>
+          <h2>Reviving Retro PCs</h2>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article class="sectionBox__two">
+        <img src="./assets/images/image-top-laptops.jpg" alt="">
+        <div>
+          <p>02</p>
+          <h2>Top 10 Laptops of 2022</h2>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article class="sectionBox__tree">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="">
+        <div>
+          <p>03</p>
+          <h2>The Growth of Gaming</h2>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+<script src="./js/app.js"></script>
 </body>
 </html>
