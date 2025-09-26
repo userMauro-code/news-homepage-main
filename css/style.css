@@ -21,15 +21,22 @@ html {
 body {
     font-family: "Inter", sans-serif;
     background-color: var(--neutral-blanco);
-    padding: 1em;
+}
+
+.container {
+    max-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: .5em;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0;
-
+    
 }
 
 .icon {
@@ -37,16 +44,117 @@ body {
     background-color: transparent;
 }
 
+
 .main {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    margin: 1em 0;
 }
 
 .img__web {
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    max-width: 375px;
     width: 100%;
+}
+
+.title__principal {
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 1;
+    width: 80%;
+}
+
+.parrafo__principal {
+    color: var(--neutral-azulOscuro);
+    width: 92%;
+}
+
+.btn__read {
+    background-color: var(--primario-rojo);
+    border: none;
+    text-transform: uppercase;
+    width: 50%;
+    padding: 1em;
+    font-size: .9em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.aside {
+    background-color: var(--neutral-azulOscuroFuerte);
+    color: var(--neutral-blanco);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.aside h2 {
+    font-size: 1.4em;
+}
+
+.aside p {
+    color: var(--neutral-azul);
+}
+
+.title__aside {
+    color: var(--primario-naranja);
+}
+
+.new__box {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.box__aside {
+    border-bottom: 1px solid var(--neutral-azul);
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.box__aside:last-child{
+    border: none;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.sectionBox {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.sectionBox img {
+    height: 10em;
+    width: auto;
+}
+
+.sectionBox .article__number {
+    color: var(--primario-rojo);
+    font-size: 2em;
+    font-weight: 700
+}
+
+.title__article {
+    font-size: 1.2em;
+}
+
+.parrafo__article {
+    color: var(--neutral-azulOscuro);
+}
+
+.article__space {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
