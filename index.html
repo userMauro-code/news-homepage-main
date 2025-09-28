@@ -26,17 +26,17 @@
         <a href=""><img src="./assets/images/logo.svg" alt="New homepage"></a>
       </button>
       <div class="content__nav">
-        <button aria-label="open menu" class="logo__menu icon">
-          <img src="./assets/images/icon-menu.svg" alt="" >
-        </button>
-        
-        <nav class="nav" hidden aria-label="Primary navigation">
+        <button aria-label="open menu" id="btnMenu" class="logo__menu icon">
+          <img src="./assets/images/icon-menu.svg" class="openMenu" alt="" >
+          <img src="./assets/images/icon-menu-close.svg" class="menuClose" hidden alt="">
+        </button>        
+        <nav class="nav" id="navMenu" hidden aria-label="Primary navigation">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">New</a></li>
-            <li><a href="">Popular</a></li>
-            <li><a href="">Trending</a></li>
-            <li><a href="">Categories</a></li>
+            <li class="listItem"><a href="">Home</a></li>
+            <li class="listItem"><a href="">New</a></li>
+            <li class="listItem"><a href="">Popular</a></li>
+            <li class="listItem"><a href="">Trending</a></li>
+            <li class="listItem"><a href="">Categories</a></li>
           </ul>
         </nav>
       </div>
